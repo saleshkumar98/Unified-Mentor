@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search or start new chat">
+            </div>
+            <div class="chats">
+                <div class="chat" onclick="openChat('contact1')">
+                    <img src="contact1.jpg" alt="Contact Picture">
+                    <div class="chat-info">
+                        <h3>Contact Name</h3>
+                        <p>Last message...</p>
+                    </div>
+                </div>
+                <!-- Repeat chat div for more contacts -->
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="contact1.jpg" alt="Contact Picture">
+                <h3>Contact Name</h3>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">
+                    <p>Hello!</p>
+                    <span class="time">10:00 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Hi there!</p>
+                    <span class="time">10:02 AM</span>
+                </div>
+                <!-- Repeat message div for more messages -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
